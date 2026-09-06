@@ -1,5 +1,7 @@
 # StubSpy
 
+Live site: [www.stubspy.com](https://www.stubspy.com)
+
 A responsive coming-soon page built with Next.js App Router, Tailwind CSS, the installed shadcn Button, and Lucide icons. Uses the supplied scout mascot and original copy inspired by the spacious, rounded TickPick references.
 
 ## Local development
@@ -32,7 +34,7 @@ npm run build:preview
 
 The normal build includes `/api/waitlist` and supports a standard Next.js deployment (for example, Vercel). The preview build exports public assets to `.next-preview/` and copies them to `out/`, leaves API routes out, and explicitly disables email collection. It is a design preview, even if Supabase is configured locally. `.openai/hosting.json` identifies that private Sites preview. Run the normal build again before deploying the server app, since Next.js reuses its internal `.next/` build directory.
 
-The purchased Cloudflare domain has not been changed. Connect `stubspy.com` to the final production host when you are ready to launch; keep registrar/DNS management in Cloudflare.
+The production site is hosted on Vercel at `www.stubspy.com`; the domain is managed through Cloudflare.
 
 ## Product choices
 
@@ -41,3 +43,11 @@ The purchased Cloudflare domain has not been changed. Connect `stubspy.com` to t
 - Section-level tracking is explained as planned functionality. The price-drop card is explicitly a demo, not a live price or savings claim.
 - No unverified marketplace partnerships, subscriber counts, launch dates, or lowest-price guarantees.
 - The project blueprint is background for this landing page; data-provider selection, scraper access, affiliate terms, and pricing need separate validation before the tracker MVP.
+
+## Vercel deployment
+
+Deploy from this project directory with `npx vercel --prod`. Use the Next.js framework preset, `npm run build`, and the default output directory. Do not set `STUBSPY_STATIC_PREVIEW` on Vercel: that mode is only for the separate Sites design preview.
+
+Set `SUPABASE_URL` and `SUPABASE_SECRET_KEY` in Vercel's production environment, then redeploy to activate email collection. Until configured, the landing page works and the form explains that signups are not open.
+
+`.vercelignore` keeps local environment files, build artifacts, and Sites preview metadata out of Vercel uploads. Vercel account/project linking is stored in the ignored `.vercel/` folder.

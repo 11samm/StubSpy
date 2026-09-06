@@ -22,8 +22,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 .skip-link:focus { top: 12px; }
 .site-header { height: 108px; display: flex; align-items: center; justify-content: space-between; }
 .wordmark { display: inline-flex; align-items: center; font-size: 31px; font-weight: 850; letter-spacing: -1.5px; }
-.brand-icon { background: #0869ec; color: white; width: 43px; height: 43px; border-radius: 14px; margin-right: 10px; display: grid; place-items: center; transform: rotate(-7deg); }
-.brand-icon svg { width: 29px; height: 29px; }
+.brand-logo { width: 47px; height: 47px; margin-right: 9px; flex-shrink: 0; }
 .brand-dot { color: #0869ec; }
 .site-header nav { display: flex; align-items: center; gap: 35px; font-size: 14px; font-weight: 600; }
 .nav-link:hover { color: #0869ec; }
@@ -65,7 +64,7 @@ h1 > span { color: #0869ec; white-space: nowrap; }
 .signup-error { font-size: 13px; line-height: 1.6; color: #a32335; margin: 10px 0; }
 .hero-art { height: 510px; position: relative; isolation: isolate; }
 .scout-orbit { position: absolute; width: 430px; height: 430px; border-radius: 50%; top: 24px; left: 45px; background: #edf6ff; box-shadow: 0 0 0 21px #f7fbff; }
-.scout-image { position: absolute; top: -60px; left: -16px; width: 570px; height: 570px; max-width: none; mix-blend-mode: multiply; z-index: 1; }
+.scout-image { position: absolute; top: 40px; left: 85px; width: 360px; height: 360px; max-width: none; z-index: 1; }
 .category-bubble { position: absolute; display: grid; place-items: center; border-radius: 22px; z-index: 2; width: 61px; height: 61px; }
 .category-bubble svg { width: 26px; height: 26px; }
 .music-bubble { top: 33px; left: 46px; background: #e4dcff; color: #8660d4; transform: rotate(-14deg); }
@@ -115,7 +114,7 @@ h3 { font-size: 19px; letter-spacing: -.4px; font-weight: 700; margin: 0 0 10px;
 .independent-note svg { width: 15px; flex-shrink: 0; }
 .site-footer { border-top: 1px solid #edf0f4; display: flex; align-items: center; justify-content: space-between; min-height: 100px; gap: 20px; }
 .footer-wordmark { font-size: 22px; letter-spacing: -.8px; gap: 6px; }
-.footer-wordmark > svg { width: 24px; color: #0869ec; }
+.footer-logo { width: 34px; height: 34px; flex-shrink: 0; }
 .footer-wordmark .brand-dot { margin-left: -6px; }
 .site-footer p, .site-footer > span { color: #7c8899; font-size: 12px; }
 .loading-spinner { animation: spin 1s linear infinite; }
@@ -134,8 +133,7 @@ h3 { font-size: 19px; letter-spacing: -.4px; font-weight: 700; margin: 0 0 10px;
   .container { width: calc(100% - 40px); }
   .site-header { height: 87px; }
   .wordmark { font-size: 27px; }
-  .brand-icon { width: 36px; height: 36px; border-radius: 11px; }
-  .brand-icon svg { width: 24px; }
+  .brand-logo { width: 39px; height: 39px; }
   .site-header nav { gap: 0; }
   .nav-link { display: none; }
   .nav-cta { padding: 11px 14px; font-size: 12px; gap: 8px; }
@@ -153,7 +151,7 @@ h3 { font-size: 19px; letter-spacing: -.4px; font-weight: 700; margin: 0 0 10px;
   .privacy-note p { text-align: left; }
   .hero-art { width: 350px; max-width: 100%; height: 385px; transform: none; margin: 24px auto 0; }
   .scout-orbit { width: 286px; height: 286px; left: 32px; top: 22px; box-shadow: 0 0 0 14px #f7fbff; }
-  .scout-image { width: 400px; height: 400px; top: -41px; left: -20px; }
+  .scout-image { width: 255px; height: 255px; top: 24px; left: 47px; }
   .category-bubble { width: 44px; height: 44px; border-radius: 15px; }
   .category-bubble svg { width: 21px; }
   .music-bubble { left: 9px; top: 35px; }

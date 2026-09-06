@@ -7,7 +7,7 @@ export default function Home() {
     <div className="site-shell">
       <a className="skip-link" href="#main">Skip to content</a>
       <header className="site-header container">
-        <a href="#" className="wordmark" aria-label="StubSpy home"><span className="brand-icon"><Binoculars aria-hidden="true" /></span>StubSpy<span className="brand-dot">.</span></a>
+        <a href="#" className="wordmark" aria-label="StubSpy home"><Image className="brand-logo" src="/stubspy-logo.svg" alt="" width={47} height={47} priority />StubSpy<span className="brand-dot">.</span></a>
         <nav aria-label="Main navigation"><a className="nav-link" href="#how-it-works">How it works</a><a className="nav-cta" href="#waitlist">Get early access <ArrowRight className="angled-arrow" aria-hidden="true" /></a></nav>
       </header>
       <main id="main">
@@ -27,7 +27,7 @@ export default function Home() {
             <div className="art-spark spark-one" aria-hidden="true">✦</div><div className="art-spark spark-two" aria-hidden="true">✧</div>
             <span className="category-bubble music-bubble"><Music2 aria-hidden="true" /><span className="sr-only">Concerts</span></span>
             <span className="category-bubble sport-bubble"><Trophy aria-hidden="true" /><span className="sr-only">Sports</span></span>
-            <Image className="scout-image" src="/stubspy-scout.png" alt="A friendly blue ticket scout looking for price drops through binoculars" width={1254} height={1254} priority sizes="(max-width: 700px) 100vw, 580px" />
+            <Image className="scout-image" src="/stubspy-logo.svg" alt="A friendly blue ticket scout looking for price drops through binoculars" width={360} height={360} priority />
             <div className="scout-note"><Binoculars /> Always on the lookout.</div>
             <div className="price-alert">
               <div className="alert-icon"><Bell /></div>
@@ -47,7 +47,7 @@ export default function Home() {
           <p className="independent-note"><ShieldCheck /> An independent price tracker. You’ll buy directly from the ticket marketplace.</p>
         </section>
       </main>
-      <footer className="site-footer container"><a href="#" className="wordmark footer-wordmark"><Binoculars aria-hidden="true" /> StubSpy<span className="brand-dot">.</span></a><p>For the fans. For the memories.</p><span>© {new Date().getFullYear()} StubSpy</span></footer>
+      <footer className="site-footer container"><a href="#" className="wordmark footer-wordmark" aria-label="StubSpy home"><Image className="footer-logo" src="/stubspy-logo.svg" alt="" width={34} height={34} /> StubSpy<span className="brand-dot">.</span></a><p>For the fans. For the memories.</p><span>© {new Date().getFullYear()} StubSpy</span></footer>
     </div>
   );
 }
