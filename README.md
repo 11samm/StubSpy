@@ -30,7 +30,7 @@ npm run build
 npm run build:preview
 ```
 
-The normal build includes `/api/waitlist` and supports a standard Next.js deployment (for example, Vercel). The preview build exports to `out/` with a separate `.next-preview/` build directory, leaves API routes out, and explicitly disables email collection. It is a design preview, even if Supabase is configured locally. `.openai/hosting.json` identifies that private Sites preview. Publish the normal server build to enable signups.
+The normal build includes `/api/waitlist` and supports a standard Next.js deployment (for example, Vercel). The preview build exports public assets to `.next-preview/` and copies them to `out/`, leaves API routes out, and explicitly disables email collection. It is a design preview, even if Supabase is configured locally. `.openai/hosting.json` identifies that private Sites preview. Run the normal build again before deploying the server app, since Next.js reuses its internal `.next/` build directory.
 
 The purchased Cloudflare domain has not been changed. Connect `stubspy.com` to the final production host when you are ready to launch; keep registrar/DNS management in Cloudflare.
 
